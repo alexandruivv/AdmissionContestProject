@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="529.0" prefWidth="894.0" style="-fx-background-color: #26004d;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <children>
+      <ImageView fitHeight="146.0" fitWidth="328.0" layoutX="238.0" layoutY="24.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ubb-logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="249.0" layoutY="210.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/person_white.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loginUser" focusTraversable="false" layoutX="309.0" layoutY="213.0" prefHeight="31.0" prefWidth="219.0" promptText="Mail" style="-fx-background-color: #26004d; -fx-border-color: #666666;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="255.0" layoutY="282.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/lock-icon-white.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="loginPassword" layoutX="309.0" layoutY="278.0" prefHeight="31.0" prefWidth="219.0" promptText="Parola" style="-fx-background-color: #26004d; -fx-border-color: #666666;" />
+      <Button layoutX="359.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #400080;" text="Logare" textFill="#9663cd">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="50.0" layoutY="47.0" opacity="0.27" text="Concurs admitere" textFill="WHITE" />
+      <Label layoutX="618.0" layoutY="47.0" opacity="0.57" text="Nu esti candidat?" textFill="WHITE" />
+      <Button layoutX="761.0" layoutY="42.0" mnemonicParsing="false" onAction="#handleSetVisibleSignUp" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #400080;" text="Inregistrare" textFill="#9663cd">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane fx:id="registerPane" layoutX="618.0" layoutY="147.0" prefHeight="350.0" prefWidth="231.0" visible="false">
+         <children>
+            <TextField fx:id="registerMailField" focusTraversable="false" layoutY="210.0" prefHeight="33.0" prefWidth="231.0" promptText="Mail" style="-fx-background-color: #26004d; -fx-border-color: #666666;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <TextField fx:id="registerPhoneField" focusTraversable="false" layoutY="160.0" prefHeight="33.0" prefWidth="231.0" promptText="Numar telefon" style="-fx-background-color: #26004d; -fx-border-color: #666666;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Button layoutX="56.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #400080;" text="Salvare" textFill="#9663cd">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label focusTraversable="false" opacity="0.57" text="Completeaza campurile de mai jos:" textFill="WHITE" />
+            <TextField fx:id="registerNameField" focusTraversable="false" layoutY="57.0" prefHeight="33.0" prefWidth="231.0" promptText="Nume si prenume" style="-fx-background-color: #26004d; -fx-border-color: #666666;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <ComboBox fx:id="registerGenderBox" focusTraversable="false" layoutY="111.0" opacity="0.36" prefHeight="31.0" prefWidth="231.0" promptText="Sex" />
+            <PasswordField fx:id="registerPasswordField" focusTraversable="false" layoutY="257.0" prefHeight="33.0" prefWidth="231.0" promptText="Parola" style="-fx-background-color: #26004d; -fx-border-color: #666666;" />
+         </children>
+         <opaqueInsets>
+            <Insets top="10.0" />
+         </opaqueInsets>
+      </Pane>
+   </children>
+</AnchorPane>

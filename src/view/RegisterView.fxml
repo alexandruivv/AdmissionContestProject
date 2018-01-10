@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="703.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RegisterController">
+   <children>
+      <TitledPane layoutX="8.0" layoutY="272.0" prefHeight="405.0" prefWidth="742.0" text="Sectii inregistrate">
+         <content>
+            <VBox layoutX="8.0" layoutY="272.0" prefHeight="376.0" prefWidth="740.0">
+               <children>
+                  <HBox layoutX="8.0" layoutY="272.0">
+                     <children>
+                        <TextField fx:id="filterField" layoutX="8.0" layoutY="272.0" onKeyReleased="#handleFilter" prefHeight="31.0" prefWidth="554.0" promptText="Filtrare" />
+                        <ComboBox fx:id="filterBox" layoutX="575.0" layoutY="272.0" prefHeight="31.0" prefWidth="170.0" promptText="Neselectat">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <VBox layoutX="8.0" layoutY="309.0" prefHeight="386.0" prefWidth="744.0">
+                     <children>
+                        <TableView fx:id="sectionsTable" prefHeight="326.0" prefWidth="744.0">
+                          <columns>
+                            <TableColumn fx:id="sectionNameColumn" prefWidth="372.0" text="Nume sectie" />
+                            <TableColumn fx:id="sectionNrPlacesColumn" minWidth="0.0" prefWidth="349.0" text="Nr locuri disponibile" />
+                          </columns>
+                        </TableView>
+                        <Pagination fx:id="sectionPagination2" pageCount="1" prefHeight="42.0" prefWidth="200.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+      <TitledPane layoutX="304.0" layoutY="14.0" style="-fx-background-color: white;" text="Optiunile tale">
+         <content>
+            <HBox alignment="CENTER" layoutX="281.0" layoutY="38.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox layoutX="281.0" layoutY="38.0" prefHeight="188.0" prefWidth="340.0">
+                     <children>
+                        <ListView fx:id="optionsView" prefHeight="125.0" prefWidth="319.0" />
+                        <Pagination fx:id="optionsPagination" pageCount="1" prefHeight="56.0" prefWidth="170.0" />
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onMouseClicked="#handleAddOption" style="-fx-background-color: green;" text="Adauga" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="65.0" left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </content>
+      </TitledPane>
+      <TitledPane layoutX="8.0" layoutY="14.0" prefHeight="244.0" prefWidth="289.0" style="-fx-background-color: white;" text="Detalii despre tine">
+         <content>
+            <VBox alignment="TOP_CENTER" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="130.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/person.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Nume: ">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="candidateName" layoutX="116.0" layoutY="10.0" text="-" textFill="#565299">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="46.0">
+                           <children>
+                              <Label text="Sex: ">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="candidateGender" layoutX="116.0" layoutY="10.0" text="-" textFill="#565299">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0">
+                           <children>
+                              <Label text="Nr.telefon: ">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="candidatePhone" layoutX="116.0" layoutY="10.0" text="-" textFill="#565299">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="63.0">
+                           <children>
+                              <Label text="Mail: ">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="candidateMail" layoutX="116.0" layoutY="10.0" text="-" textFill="#565299">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+   </children>
+</Pane>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="703.0" prefWidth="759.0">
+         <center>
+            <VBox prefHeight="703.0" prefWidth="407.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="5.0" right="10.0" top="40.0" />
+               </BorderPane.margin>
+               <children>
+                  <TitledPane animated="false" text="Adresa">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="426.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="427.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/mail-icon2.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox prefHeight="100.0" prefWidth="389.0">
+                                       <children>
+                                          <Label text="Universitatea Babes-Bolyai Cluj-Napoca" />
+                                          <Label layoutX="10.0" layoutY="10.0" text="Facultatea de matematica si informatica" />
+                                          <Label layoutX="10.0" layoutY="31.0" text="Str.Mihail Kogalniceanu, nr. 1" />
+                                          <Label layoutX="10.0" layoutY="52.0" text="RO-400084 Cluj-Napoca" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="Telefon">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="426.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="427.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/phone-icon.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox prefHeight="100.0" prefWidth="389.0">
+                                       <children>
+                                          <Label text="Tel. Secretariat: +40 264 405300, int. 5240" />
+                                          <Label layoutX="10.0" layoutY="10.0" text="Tel. Decanat: +40 264 405300, int. 5244" />
+                                          <Label layoutX="10.0" layoutY="31.0" text="Tel. Decanat: +40 264 405327" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane animated="false" layoutX="10.0" layoutY="142.0" text="Fax">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="426.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="427.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/fax-icon.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox prefHeight="100.0" prefWidth="389.0">
+                                       <children>
+                                          <Label text="Fax: +40 264 591906" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TitledPane>
+                  <TitledPane animated="false" layoutX="10.0" layoutY="274.0" text="Email">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="426.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="427.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/mail-icon3.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <VBox prefHeight="100.0" prefWidth="389.0">
+                                       <children>
+                                          <Label text="E-mail: math@math.ubbcluj.ro" />
+                                          <Label layoutX="10.0" layoutY="10.0" text="Informaţii admitere: admitere@cs.ubbcluj.ro" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TitledPane>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <ImageView fitHeight="377.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/ubb-image.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </right>
+         <top>
+            <Pane prefHeight="71.0" prefWidth="759.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="31.0" layoutY="25.0" text="Contact" underline="true">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</Pane>

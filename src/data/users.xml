@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+    <user userMail="alexandruivv@yahoo.com">
+        <password>parolamea</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="popescuandrei@yahoo.com">
+        <password>parolaubb</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="numeprenume@mail.com">
+        <password>parolamea</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="floreacalin@yahoo.com">
+        <password>floreacalin</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="admitere@cs.ubbcluj.ro">
+        <password>admitereubb</password>
+        <userType>Admin</userType>
+    </user>
+    <user userMail="mihaiionescu@yahoo.com">
+        <password>dadada</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="abcdefgh@gmail.com">
+        <password>parola</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="mail@yahoo.com">
+        <password>parolamea</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="ioanbogdan@gmail.com">
+        <password>parolamea</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="iair2122@scs.ro">
+        <password>parolamea</password>
+        <userType>Candidate</userType>
+    </user>
+</users>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="703.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CandidateController">
+   <children>
+      <TextField fx:id="filterField" layoutX="8.0" layoutY="231.0" onKeyReleased="#handleFilter" prefHeight="31.0" prefWidth="560.0" promptText="Filtrare" />
+      <ImageView fitHeight="99.0" fitWidth="130.0" layoutX="20.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/person-icon-black.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="optionsLabel1" layoutX="18.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info: selecteaza un candidat pentru a fi afisate optiunile la care este inscris.">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Pane layoutX="26.0" layoutY="141.0" onMouseClicked="#handleAddCandidateButton" prefHeight="36.0" prefWidth="186.0" style="-fx-background-color: green;">
+         <children>
+            <Text fill="WHITE" layoutX="47.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adauga candidat">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add-person.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="54.0" prefWidth="6.0" style="-fx-background-color: #555299;" visible="false" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Text layoutX="119.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidati">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="filterBox" layoutX="577.0" layoutY="231.0" prefHeight="31.0" prefWidth="170.0" promptText="Neselectat" />
+      <Pane fx:id="addOptionPane" layoutX="222.0" layoutY="14.0" prefHeight="213.0" prefWidth="523.0" style="-fx-background-color: #FFFAF0;">
+         <children>
+            <Text fx:id="optionsLabel" layoutX="89.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Optiuni ale candidatului">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="74.0" fitWidth="68.0" layoutX="366.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/tick-logo.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="addOptionText" layoutX="446.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Optiuni">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Pane fx:id="addOptionButton" layoutX="380.0" layoutY="112.0" onMouseClicked="#handleAddOption" prefHeight="42.0" prefWidth="109.0" style="-fx-background-color: green;">
+               <children>
+                  <Text fill="WHITE" layoutX="39.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adauga optiune" wrappingWidth="105.849609375">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="6.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="54.0" prefWidth="6.0" style="-fx-background-color: #555299;" visible="false" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <VBox layoutX="6.0" layoutY="24.0" prefHeight="188.0" prefWidth="340.0">
+               <children>
+                  <ListView fx:id="optionsView" prefHeight="125.0" prefWidth="319.0" />
+                  <Pagination fx:id="optionsPagination" pageCount="1" prefHeight="56.0" prefWidth="170.0" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <VBox layoutX="8.0" layoutY="269.0" prefHeight="421.0" prefWidth="744.0">
+         <children>
+            <TableView fx:id="candidatesTable" onMouseClicked="#showOptions" prefHeight="358.0" prefWidth="667.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="198.0" text="Nume" />
+                <TableColumn fx:id="genderColumn" minWidth="0.0" prefWidth="43.0" text="Sex" />
+                  <TableColumn fx:id="phoneColumn" prefWidth="155.0" text="Telefon" />
+                  <TableColumn fx:id="mailColumn" prefWidth="240.0" text="Mail" />
+                  <TableColumn fx:id="deleteColumn" maxWidth="69.0" prefWidth="58.0" />
+                  <TableColumn fx:id="updateColumn" maxWidth="70.0" prefWidth="49.0" />
+              </columns>
+            </TableView>
+            <Pagination fx:id="candidatesPagination" pageCount="1" prefHeight="42.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

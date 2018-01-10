@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="windowContent" prefHeight="703.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HomeController">
+   <children>
+      <SplitPane dividerPositions="0.1504424778761062" layoutX="21.0" layoutY="42.0" orientation="VERTICAL" prefHeight="228.0" prefWidth="718.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="31.0" prefWidth="716.0">
+               <children>
+                  <Text fill="#abaaaa" layoutX="8.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evidenta">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <BorderPane layoutX="14.0" layoutY="22.0" prefHeight="145.0" prefWidth="222.0">
+                     <center>
+                        <Pane prefHeight="145.0" prefWidth="222.0" style="-fx-background-color: d02f2f;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="6.0" layoutY="14.0" text="CANDIDATI" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="candidatesTopText" layoutX="17.0" layoutY="35.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="40.0" layoutX="101.0" layoutY="98.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                              <Text fx:id="candidatesBotText" fill="WHITE" layoutX="8.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 candidati inscrisi">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Text>
+                              <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="89.0" layoutY="13.0" onMouseClicked="#goToCandidatesTab" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/redirect_white.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </center>
+                     <left>
+                        <Pane prefHeight="145.0" prefWidth="88.0" style="-fx-background-color: c00f0f;" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="113.0" fitWidth="87.0" layoutX="1.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/person_white.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </left>
+                  </BorderPane>
+                  <BorderPane layoutX="247.0" layoutY="22.0" prefHeight="145.0" prefWidth="222.0">
+                     <center>
+                        <Pane prefHeight="145.0" prefWidth="222.0" style="-fx-background-color: #484D8B;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="6.0" layoutY="14.0" text="SECTII" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="sectionsTopText" layoutX="17.0" layoutY="35.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="40.0" layoutX="101.0" layoutY="98.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                              <Text fx:id="sectionsBotText" fill="WHITE" layoutX="6.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 sectii disponibile">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Text>
+                              <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="53.0" layoutY="13.0" onMouseClicked="#goToSectionsTab" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/redirect_white.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </center>
+                     <left>
+                        <Pane prefHeight="145.0" prefWidth="88.0" style="-fx-background-color: #483D8B;" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="113.0" fitWidth="87.0" layoutX="1.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/section-icon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </left>
+                  </BorderPane>
+                  <BorderPane layoutX="481.0" layoutY="22.0" prefHeight="145.0" prefWidth="222.0">
+                     <center>
+                        <Pane prefHeight="145.0" prefWidth="222.0" style="-fx-background-color: #800091;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="6.0" layoutY="14.0" text="OPTIUNI" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font></Label>
+                              <Label fx:id="optionsTopText" layoutX="17.0" layoutY="35.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="40.0" layoutX="101.0" layoutY="98.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                              <Text fx:id="optionsBotText" fill="WHITE" layoutX="4.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 optiuni inregistrate">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Text>
+                              <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="67.0" layoutY="14.0" onMouseClicked="#goToCandidatesTab" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/redirect_white.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </center>
+                     <left>
+                        <Pane prefHeight="145.0" prefWidth="88.0" style="-fx-background-color: #800080;" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="73.0" fitWidth="71.0" layoutX="9.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/optiune-logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </left>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

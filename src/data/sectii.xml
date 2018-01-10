@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sections>
+    <section>
+        <freePlaces>152</freePlaces>
+        <id>1</id>
+        <name>Informatica romana buget</name>
+    </section>
+    <section>
+        <freePlaces>48</freePlaces>
+        <id>2</id>
+        <name>Informatica romana taxa</name>
+    </section>
+    <section>
+        <freePlaces>145</freePlaces>
+        <id>5</id>
+        <name>Informatica engleza buget</name>
+    </section>
+    <section>
+        <freePlaces>53</freePlaces>
+        <id>6</id>
+        <name>Informatica engleza taxa</name>
+    </section>
+    <section>
+        <freePlaces>38</freePlaces>
+        <id>7</id>
+        <name>Informatica germana buget</name>
+    </section>
+    <section>
+        <freePlaces>35</freePlaces>
+        <id>8</id>
+        <name>Informatica germana taxa</name>
+    </section>
+    <section>
+        <freePlaces>45</freePlaces>
+        <id>9</id>
+        <name>Matematica romana buget</name>
+    </section>
+    <section>
+        <freePlaces>35</freePlaces>
+        <id>10</id>
+        <name>Matematica-Informatica romana buget</name>
+    </section>
+</sections>

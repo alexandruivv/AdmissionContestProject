@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<options>
+    <option createDate="2018-01-08T18:10:49.875+02:00" idCandidate="7" idSection="6">
+        <priority>1</priority>
+    </option>
+    <option createDate="2018-01-08T13:12:56.953+02:00" idCandidate="5" idSection="1">
+        <priority>1</priority>
+    </option>
+    <option createDate="2018-01-08T18:10:53.922+02:00" idCandidate="7" idSection="9">
+        <priority>2</priority>
+    </option>
+    <option createDate="2018-01-08T13:13:08.695+02:00" idCandidate="5" idSection="8">
+        <priority>3</priority>
+    </option>
+    <option createDate="2018-01-08T19:11:34.446+02:00" idCandidate="8" idSection="2">
+        <priority>4</priority>
+    </option>
+    <option createDate="2018-01-08T13:13:00.998+02:00" idCandidate="5" idSection="10">
+        <priority>2</priority>
+    </option>
+    <option createDate="2018-01-07T18:44:31.748+02:00" idCandidate="1" idSection="1">
+        <priority>3</priority>
+    </option>
+    <option createDate="2018-01-08T19:11:24.460+02:00" idCandidate="8" idSection="6">
+        <priority>1</priority>
+    </option>
+    <option createDate="2018-01-08T19:11:30.287+02:00" idCandidate="8" idSection="8">
+        <priority>3</priority>
+    </option>
+    <option createDate="2018-01-08T19:11:27.974+02:00" idCandidate="8" idSection="9">
+        <priority>2</priority>
+    </option>
+    <option createDate="2018-01-07T18:28:06.932+02:00" idCandidate="1" idSection="5">
+        <priority>1</priority>
+    </option>
+    <option createDate="2018-01-08T15:02:45.880+02:00" idCandidate="1" idSection="6">
+        <priority>4</priority>
+    </option>
+    <option createDate="2018-01-07T19:42:38.908+02:00" idCandidate="4" idSection="1">
+        <priority>3</priority>
+    </option>
+    <option createDate="2018-01-07T19:42:42.769+02:00" idCandidate="4" idSection="2">
+        <priority>4</priority>
+    </option>
+    <option createDate="2018-01-07T18:31:35.325+02:00" idCandidate="1" idSection="10">
+        <priority>2</priority>
+    </option>
+    <option createDate="2018-01-07T19:42:30.517+02:00" idCandidate="4" idSection="6">
+        <priority>2</priority>
+    </option>
+    <option createDate="2018-01-07T18:35:18.368+02:00" idCandidate="2" idSection="1">
+        <priority>1</priority>
+    </option>
+    <option createDate="2018-01-07T19:42:25.262+02:00" idCandidate="4" idSection="7">
+        <priority>1</priority>
+    </option>
+</options>

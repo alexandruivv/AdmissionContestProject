@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="787.0" prefWidth="1027.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CandidateStartMenuController">
+   <top>
+      <BorderPane prefHeight="84.0" prefWidth="1027.0" style="-fx-background-color: #565299;" BorderPane.alignment="CENTER">
+         <left>
+            <ImageView fitHeight="103.0" fitWidth="268.0" onMouseClicked="#handleRegisterButton" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/ubb-logo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </left>
+         <right>
+            <HBox alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="38.0" layoutX="10.0" layoutY="34.0" onMouseClicked="#handleLogOut" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <image>
+                        <Image url="@../images/logout.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../images/person-icon).png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Text fx:id="nameUser" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets right="15.0" />
+                           </BorderPane.margin>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                        <Text fill="#6864b8" layoutX="10.0" layoutY="58.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidat">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </right>
+      </BorderPane>
+   </top>
+   <left>
+      <BorderPane prefHeight="703.0" prefWidth="268.0" style="-fx-background-color: #2a2e30;" BorderPane.alignment="CENTER">
+         <top>
+            <Pane prefHeight="117.0" prefWidth="268.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="searchBar" layoutX="15.0" layoutY="20.0" prefHeight="36.0" prefWidth="240.0" promptText="Search..." style="-fx-background-color: #3b484e;" />
+                  <ImageView fitHeight="40.0" fitWidth="43.0" layoutX="213.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/search-icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane layoutY="73.0" prefHeight="43.0" prefWidth="268.0" style="-fx-background-color: #1b1b1b;">
+                     <children>
+                        <Text fill="#5b5a5a" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAVIGARE">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <VBox prefHeight="609.0" prefWidth="268.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane layoutX="10.0" layoutY="10.0" onMouseEntered="#handleMouseOnRegisterButton" onMouseExited="#handleMouseExitedRegisterButton" prefHeight="54.0" prefWidth="268.0">
+                     <center>
+                        <Button mnemonicParsing="false" onMouseClicked="#handleRegisterButton" prefHeight="54.0" prefWidth="268.0" style="-fx-background-color: #2a2e30;" textOverrun="CLIP" BorderPane.alignment="CENTER">
+                           <graphic>
+                              <HBox fx:id="registerButton" fillHeight="false" opacity="0.5" prefHeight="44.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/person-icon.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Inregistare">
+                                       <font>
+                                          <Font name="Arial Bold" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="13.0" top="13.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets left="4.0" />
+                                 </padding>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </center>
+                     <left>
+                        <Pane fx:id="registerBar" prefHeight="54.0" prefWidth="10.0" style="-fx-background-color: #565299;" visible="false" BorderPane.alignment="CENTER" />
+                     </left>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="172.0" onMouseEntered="#handleMouseOnContactButton" onMouseExited="#handleMouseExitedContactButton" prefHeight="54.0" prefWidth="268.0">
+                     <center>
+                        <Button mnemonicParsing="false" onMouseClicked="#handleContactButton" prefHeight="54.0" prefWidth="268.0" style="-fx-background-color: #2a2e30;" textOverrun="CLIP" BorderPane.alignment="CENTER">
+                           <graphic>
+                              <HBox fx:id="contactButton" fillHeight="false" opacity="0.5" prefHeight="44.0" prefWidth="250.0">
+                                 <children>
+                                    <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/mail-icon.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact">
+                                       <font>
+                                          <Font name="Arial Bold" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="13.0" top="13.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </center>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <left>
+                        <Pane fx:id="contactBar" prefHeight="54.0" prefWidth="10.0" style="-fx-background-color: #565299;" visible="false" BorderPane.alignment="CENTER" />
+                     </left>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </BorderPane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <Pane fx:id="windowContent" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

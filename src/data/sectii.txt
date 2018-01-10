@@ -1,0 +1,6 @@
+1;Info romana;250
+2;Info engleza;200
+3;Info maghiara;80
+4;Matematica romana;50
+5;Matematica engleza;80
+6;Matematica maghiara;30

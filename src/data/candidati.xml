@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<candidates>
+    <candidate id="1">
+        <createDate>2018-01-05T22:26:23.452+02:00</createDate>
+        <mail>alexandruivv@yahoo.com</mail>
+        <name>Ivanov Alexandru</name>
+        <phoneNr>0740239081</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="2">
+        <createDate>2018-01-06T18:44:11.349+02:00</createDate>
+        <mail>ioanbogdan@gmail.com</mail>
+        <name>Ioan Bogdan Mihai</name>
+        <phoneNr>0741232192</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="3">
+        <createDate>2018-01-07T19:44:01.957+02:00</createDate>
+        <mail>popescuandrei@yahoo.com</mail>
+        <name>Popescu Andrei</name>
+        <phoneNr>0723123234</phoneNr>
+        <sex>F</sex>
+    </candidate>
+    <candidate id="4">
+        <createDate>2018-01-07T19:43:54.772+02:00</createDate>
+        <mail>mihaiionescu@yahoo.com</mail>
+        <name>Mihai Ionescu</name>
+        <phoneNr>0719294502</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="5">
+        <createDate>2018-01-08T13:12:01.123+02:00</createDate>
+        <mail>abcdefgh@gmail.com</mail>
+        <name>ion ion</name>
+        <phoneNr>+40762222222</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="6">
+        <createDate>2018-01-08T15:04:50.718+02:00</createDate>
+        <mail>numeprenume@mail.com</mail>
+        <name>Nume prenume</name>
+        <phoneNr>+04732123123</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="7">
+        <createDate>2018-01-08T18:10:24.927+02:00</createDate>
+        <mail>floreacalin@yahoo.com</mail>
+        <name>Florea Calin</name>
+        <phoneNr>+0422312323</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="8">
+        <createDate>2018-01-08T19:10:29.202+02:00</createDate>
+        <mail>mail@yahoo.com</mail>
+        <name>Popescu Ion</name>
+        <phoneNr>0742323232</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="9">
+        <createDate>2018-01-08T19:16:21.575+02:00</createDate>
+        <mail>iair2122@scs.ro</mail>
+        <name>Ionut Andreea</name>
+        <phoneNr>0730198679</phoneNr>
+        <sex>F</sex>
+    </candidate>
+</candidates>

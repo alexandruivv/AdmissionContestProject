@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="703.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SectionController">
+   <children>
+      <ImageView fitHeight="92.0" fitWidth="87.0" layoutX="31.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/section-icon-black.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="fieldFilter" layoutX="228.0" layoutY="15.0" onKeyReleased="#handleFilter" prefHeight="31.0" prefWidth="523.0" promptText="Filtrare nume sectie" />
+      <Text layoutX="140.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sectii">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <Pane layoutX="14.0" layoutY="122.0" onMouseClicked="#handleAddButton" prefHeight="36.0" prefWidth="186.0" style="-fx-background-color: green;">
+         <children>
+            <Text fill="WHITE" layoutX="47.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adauga sectie">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="54.0" prefWidth="6.0" style="-fx-background-color: #555299;" visible="false" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Text fx:id="optionsLabel1" layoutX="20.0" layoutY="694.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Info: selecteaza o sectie pentru a fi afisati candidatii inscrisi la sectia respectiva !">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <VBox layoutX="9.0" layoutY="335.0" prefHeight="343.0" prefWidth="744.0">
+         <children>
+            <TableView fx:id="candidatesTable" prefHeight="277.0" prefWidth="719.0">
+              <columns>
+                <TableColumn fx:id="candidateNameColumn" prefWidth="270.0" text="Nume" />
+                <TableColumn fx:id="candidateGenderColumn" minWidth="0.0" prefWidth="41.0" text="Sex" />
+                  <TableColumn fx:id="candidatePhoneColumn" prefWidth="169.0" text="Telefon" />
+                  <TableColumn fx:id="candidateMailColumn" prefWidth="262.0" text="Mail" />
+              </columns>
+            </TableView>
+            <Pagination fx:id="candidatesPagination" pageCount="1" prefHeight="54.0" prefWidth="205.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="222.0" layoutY="51.0" prefHeight="283.0" prefWidth="533.0">
+         <children>
+            <TableView fx:id="sectionsTable" onMouseClicked="#populateCandidatesTable" prefHeight="224.0" prefWidth="523.0">
+              <columns>
+                <TableColumn fx:id="sectionNameColumn" prefWidth="329.0" text="Nume" />
+                <TableColumn fx:id="sectionPlacesColumn" prefWidth="82.0" text="Nr locuri" />
+                  <TableColumn fx:id="sectionDeleteButton" maxWidth="125.0" minWidth="32.0" prefWidth="54.0" />
+                  <TableColumn fx:id="sectionUpdateButton" maxWidth="81.0" minWidth="41.0" prefWidth="57.0" />
+              </columns>
+            </TableView>
+            <Pagination fx:id="sectionsPagination" pageCount="1" prefHeight="44.0" prefWidth="195.0" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
