@@ -1,66 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <candidates>
-    <candidate id="1">
-        <createDate>2018-01-05T22:26:23.452+02:00</createDate>
-        <mail>alexandruivv@yahoo.com</mail>
-        <name>Ivanov Alexandru</name>
-        <phoneNr>0740239081</phoneNr>
+    <candidate id="16">
+        <createDate>2018-01-16T14:52:12.798+02:00</createDate>
+        <mail>hcir@scs.com</mail>
+        <name>Hulea Cristian</name>
+        <phoneNr>0568547584</phoneNr>
         <sex>M</sex>
     </candidate>
     <candidate id="2">
-        <createDate>2018-01-06T18:44:11.349+02:00</createDate>
-        <mail>ioanbogdan@gmail.com</mail>
-        <name>Ioan Bogdan Mihai</name>
-        <phoneNr>0741232192</phoneNr>
+        <createDate>2018-01-13T09:41:52.833+02:00</createDate>
+        <mail>hinduandrei@yahoo.com</mail>
+        <name>Hindu Andrei</name>
+        <phoneNr>0742312321</phoneNr>
         <sex>M</sex>
     </candidate>
     <candidate id="3">
-        <createDate>2018-01-07T19:44:01.957+02:00</createDate>
-        <mail>popescuandrei@yahoo.com</mail>
-        <name>Popescu Andrei</name>
-        <phoneNr>0723123234</phoneNr>
-        <sex>F</sex>
+        <createDate>2018-01-11T23:15:58.710+02:00</createDate>
+        <mail>ioanbogdan@gmail.com</mail>
+        <name>Bogdan Ioan</name>
+        <phoneNr>0712321323</phoneNr>
+        <sex>M</sex>
     </candidate>
     <candidate id="4">
-        <createDate>2018-01-07T19:43:54.772+02:00</createDate>
-        <mail>mihaiionescu@yahoo.com</mail>
-        <name>Mihai Ionescu</name>
-        <phoneNr>0719294502</phoneNr>
+        <createDate>2018-01-13T09:54:49.361+02:00</createDate>
+        <mail>crgroot97@gmail.com</mail>
+        <name>Mihaila Iulian</name>
+        <phoneNr>0769696969</phoneNr>
         <sex>M</sex>
     </candidate>
     <candidate id="5">
-        <createDate>2018-01-08T13:12:01.123+02:00</createDate>
-        <mail>abcdefgh@gmail.com</mail>
-        <name>ion ion</name>
-        <phoneNr>+40762222222</phoneNr>
+        <createDate>2018-01-12T16:53:37.575+02:00</createDate>
+        <mail>conkasor@yahoo.com</mail>
+        <name>Filipoiu George</name>
+        <phoneNr>0749849207</phoneNr>
         <sex>M</sex>
     </candidate>
     <candidate id="6">
-        <createDate>2018-01-08T15:04:50.718+02:00</createDate>
-        <mail>numeprenume@mail.com</mail>
-        <name>Nume prenume</name>
-        <phoneNr>+04732123123</phoneNr>
-        <sex>M</sex>
-    </candidate>
-    <candidate id="7">
-        <createDate>2018-01-08T18:10:24.927+02:00</createDate>
-        <mail>floreacalin@yahoo.com</mail>
-        <name>Florea Calin</name>
-        <phoneNr>+0422312323</phoneNr>
-        <sex>M</sex>
+        <createDate>2018-01-13T09:59:50.453+02:00</createDate>
+        <mail>corugamihaela@gmail.com</mail>
+        <name>Coruga Mihaela</name>
+        <phoneNr>0723412511</phoneNr>
+        <sex>F</sex>
     </candidate>
     <candidate id="8">
-        <createDate>2018-01-08T19:10:29.202+02:00</createDate>
-        <mail>mail@yahoo.com</mail>
-        <name>Popescu Ion</name>
-        <phoneNr>0742323232</phoneNr>
+        <createDate>2018-01-13T10:00:26.570+02:00</createDate>
+        <mail>ionutandreea@yahoo.com</mail>
+        <name>Ionut Andreea</name>
+        <phoneNr>0723123354</phoneNr>
+        <sex>F</sex>
+    </candidate>
+    <candidate id="10">
+        <createDate>2018-01-13T10:00:45.620+02:00</createDate>
+        <mail>petrutiupaul@gmail.com</mail>
+        <name>Petrutiu Paul</name>
+        <phoneNr>0782132222</phoneNr>
         <sex>M</sex>
     </candidate>
-    <candidate id="9">
-        <createDate>2018-01-08T19:16:21.575+02:00</createDate>
-        <mail>iair2122@scs.ro</mail>
-        <name>Ionut Andreea</name>
-        <phoneNr>0730198679</phoneNr>
+    <candidate id="12">
+        <createDate>2018-01-13T10:01:10.052+02:00</createDate>
+        <mail>bucatariumarian@gmail.com</mail>
+        <name>Bucatariu Marian</name>
+        <phoneNr>0782563721</phoneNr>
+        <sex>M</sex>
+    </candidate>
+    <candidate id="13">
+        <createDate>2018-01-13T10:02:19.696+02:00</createDate>
+        <mail>cosmaelena@yahoo.com</mail>
+        <name>Cosma Elena</name>
+        <phoneNr>0765478901</phoneNr>
         <sex>F</sex>
+    </candidate>
+    <candidate id="15">
+        <createDate>2018-01-13T12:39:02.453+02:00</createDate>
+        <mail>alexandruivv@yahoo.com</mail>
+        <name>Ivanov Alexandru</name>
+        <phoneNr>0742153656</phoneNr>
+        <sex>M</sex>
     </candidate>
 </candidates>

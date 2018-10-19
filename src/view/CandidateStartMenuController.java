@@ -24,6 +24,7 @@ public class CandidateStartMenuController {
 
     private Pane registerView;
     private Pane contactView;
+    private Pane changePasswordView;
 
     private Node currentWindow;
 
@@ -85,6 +86,20 @@ public class CandidateStartMenuController {
 
     }
 
+    @FXML
+    public void handleChangePassword(MouseEvent ev){
+
+        disableCurrentButton();
+
+        this.windowContent.getChildren().remove(currentWindow);
+
+        this.currentWindow = changePasswordView;
+
+        this.windowContent.getChildren().add(currentWindow);
+
+    }
+
+
     //on entered
 
     @FXML
@@ -136,11 +151,12 @@ public class CandidateStartMenuController {
         setDataForUserLoggedIn(candidate);
     }
 
-    public void setPane(Pane registerView, Pane contactView){
+    public void setPane(Pane registerView, Pane contactView, Pane changePasswordView){
         this.currentWindow = registerView;
 
         this.registerView = registerView;
         this.contactView = contactView;
+        this.changePasswordView = changePasswordView;
 
 
         this.windowContent.getChildren().add(currentWindow);

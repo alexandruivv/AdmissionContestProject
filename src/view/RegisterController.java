@@ -3,8 +3,10 @@ package view;
 import domain.Candidate;
 import domain.Option;
 import domain.Section;
+import domain.ValidationException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -19,11 +21,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import services.GeneralService;
-
+import utils.User;
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -86,7 +92,9 @@ class XCellRegisterController extends ListCell<String> {
 public class RegisterController {
     private GeneralService service;
     private Candidate candidate;
+    private User user;
 
+    private Stage stage;
     @FXML
     Label candidateName;
 
@@ -124,6 +132,9 @@ public class RegisterController {
     Pagination sectionPagination2;
 
     @FXML
+    ImageView candidateImage;
+
+    @FXML
     public void initialize(){
         optionsView.setCellFactory(param -> new XCellRegisterController(this));
     }
@@ -145,6 +156,26 @@ public class RegisterController {
         else{
             sectionsTable.getItems().setAll(service.getSectionService().getAll());
             sectionPagination2.setPageFactory(this::createPage);
+        }
+    }
+
+    @FXML
+    public void handleChangePhoto(MouseEvent ev){
+        FileChooser fileChooser = new FileChooser();
+
+        File file = fileChooser.showOpenDialog(stage);
+        if (file != null) {
+            try {
+                URL url = file.toURI().toURL();
+                candidateImage.setImage(new Image(url.toExternalForm()));
+                user.setImagePath(url.toExternalForm());
+                service.getUserService().update(user);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (ValidationException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
@@ -209,8 +240,8 @@ public class RegisterController {
             switch (choice){
                 case "Nume":
                     return service.getSectionService().filterByName(filterField.getText());
-                case "Locuri":
-                   // return service.getCandidateService().filterByGender(filterField.getText()); TODO
+                case "> Nr locuri":
+                    return service.getSectionService().filterByNr(Integer.parseInt(filterField.getText()));
 
             }
         }
@@ -222,6 +253,7 @@ public class RegisterController {
         this.candidateGender.setText(this.candidate.getSex().toString());
         this.candidatePhone.setText(this.candidate.getPhoneNr());
         this.candidateMail.setText(this.candidate.getMail());
+        this.candidateImage.setImage(new Image(user.getImagePath()));
     }
 
 
@@ -244,9 +276,14 @@ public class RegisterController {
         optionsPagination.setPageFactory(this::createPageOptions);
     }
 
-    public void setCandidate(Candidate candidate){
+    public void setCandidate(Candidate candidate, User user){
         this.candidate = candidate;
+        this.user = user;
         setCandidateData();
+    }
+
+    public void setStage(Stage stage){
+        this.stage = stage;
     }
 
     public GeneralService getGeneralService(){

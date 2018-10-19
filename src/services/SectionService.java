@@ -43,6 +43,12 @@ public class SectionService extends Service<Integer, Section> {
                 (x,y)->x.getName().compareTo(y.getName()));
     }
 
+    public List<Section> filterByNr(int nr){
+        return filterAndSorter(super.getAll(),
+                (x)->x.getFreePlaces() >= nr,
+                (x,y)->x.getName().compareTo(y.getName()));
+    }
+
     public List<Section> getSectionsWithMostFreePlaces(int numberToReturn){
         List<Section> toBeReturned = new ArrayList<>();
         if(super.getAll().size() >= numberToReturn) {

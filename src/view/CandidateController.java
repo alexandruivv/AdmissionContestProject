@@ -3,8 +3,10 @@ package view;
 import domain.Candidate;
 import domain.Option;
 import domain.Section;
+import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -178,7 +180,6 @@ public class CandidateController implements Observer<Candidate> {
             candidatesPagination.setPageFactory(this::createPage);
         }
     }
-
 
     private List<Candidate> filterTag(){
         String choice = filterBox.getSelectionModel().getSelectedItem();
@@ -383,7 +384,7 @@ public class CandidateController implements Observer<Candidate> {
 
 
     public int rowsPerPage() {
-        return 5;
+        return 8;
     }
 
     public int rowsOptionsPerPage(){

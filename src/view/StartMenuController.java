@@ -50,6 +50,7 @@ public class StartMenuController {
     private Pane sectionView;
     private Pane reportView;
     private Pane contactView;
+    private Pane changePasswordView;
 
     private Node currentWindow;
 
@@ -171,6 +172,18 @@ public class StartMenuController {
         mouseEnteredOnButton(contactButton, contactBar);
     }
 
+    @FXML
+    public void handleChangePassword(MouseEvent event){
+        disableCurrentButton();
+
+        this.windowContent.getChildren().remove(currentWindow);
+
+        this.currentWindow = changePasswordView;
+
+        this.windowContent.getChildren().add(currentWindow);
+
+    }
+
     //on entered
     @FXML
     public void handleMouseOnHomeButton(MouseEvent ev){
@@ -270,7 +283,7 @@ public class StartMenuController {
         setDataForUserLoggedIn(candidate, user);
     }
 
-    public void setPane(Pane homeView, Pane candidateView, Pane sectionView, Pane reportsView, Pane contactView){
+    public void setPane(Pane homeView, Pane candidateView, Pane sectionView, Pane reportsView, Pane contactView, Pane changePasswordView){
         this.currentWindow = homeView;
 
         this.homeView = homeView;
@@ -278,6 +291,7 @@ public class StartMenuController {
         this.sectionView = sectionView;
         this.reportView = reportsView;
         this.contactView = contactView;
+        this.changePasswordView = changePasswordView;
 
         this.windowContent.getChildren().add(currentWindow);
 

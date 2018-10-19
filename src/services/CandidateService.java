@@ -41,7 +41,7 @@ public class CandidateService extends Service<Integer, Candidate> {
 
     public List<Candidate> filterByGender(String gender){
         return filterAndSorter(super.getAll(),
-                (x)->x.getSex().equals(gender),
+                (x)->x.getSex().toString().equals(gender),
                 (x,y)->x.getName().compareTo(y.getName()));
     }
 

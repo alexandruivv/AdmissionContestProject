@@ -26,6 +26,20 @@
          <right>
             <HBox alignment="CENTER">
                <children>
+                  <Text fill="#7f7cd0" onMouseClicked="#handleChangePassword" strokeType="OUTSIDE" strokeWidth="0.0" text="Schimbare parola">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
                   <ImageView fitHeight="37.0" fitWidth="38.0" layoutX="10.0" layoutY="34.0" onMouseClicked="#handleLogOut" pickOnBounds="true" preserveRatio="true">
                      <effect>
                         <DropShadow />

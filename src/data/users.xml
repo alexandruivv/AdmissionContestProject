@@ -1,43 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <users>
+    <user userMail="hinduandrei@yahoo.com">
+        <imagePath>file:/E:/Faculta/An%202/AdmitereConcurs/src/images/icon-app.png</imagePath>
+        <password>1000:c8fec0f0da0553ecd23c40aaf502f0c1:a8ab3cd01286f2627662ae4766fbc05884605b417d82d954fdff4a32229fc45527f8bdf76f649f9df208ab06c15bac82d9a45e622dfa3e6099d26ce3093f1eb0</password>
+        <userType>Candidate</userType>
+    </user>
     <user userMail="alexandruivv@yahoo.com">
-        <password>parolamea</password>
+        <imagePath>file:/C:/Users/Alex/Pictures/19970742_1389342211114244_451830329_n.jpg</imagePath>
+        <password>1000:07ca5fc8e534301deb54f388fe40839a:f820e271a5de929012f937c0358788b5402e0f81d3043409cd6afc9117e43eb5bcf7fabe15451c72b08f3e6758fd19745c216f67208ec24d1333918285501616</password>
         <userType>Candidate</userType>
     </user>
-    <user userMail="popescuandrei@yahoo.com">
-        <password>parolaubb</password>
+    <user userMail="conkasor@yahoo.com">
+        <imagePath>file:/C:/Users/Alex/Pictures/Camera%20Roll/WIN_20171116_21_53_30_Pro.jpg</imagePath>
+        <password>1000:6d5cce803d4d7d356ca159964546d46d:2a99acc6b523c5a1ce5ccf30e2c13f70decda31c208db67e4709692f2669bf33afae230e5e3a606eb46e148473e2f436d1f43923e985cfa2d73ff565df2ff181</password>
         <userType>Candidate</userType>
     </user>
-    <user userMail="numeprenume@mail.com">
-        <password>parolamea</password>
+    <user userMail="crgroot97@gmail.com">
+        <imagePath>file:/E:/Faculta/An%202/AdmitereConcurs/src/images/icon-app.png</imagePath>
+        <password>1000:1ff218727a964ef1ce0d8e29f638910d:f3bef21de755f6dcb5ea0a065e306d2ef726a52c64da9f170d5fc158ccda4c07baa13eba56cbd8b8a4275bec05bbd48e99d7c7b136942617348c75e06ef3f52c</password>
         <userType>Candidate</userType>
     </user>
-    <user userMail="floreacalin@yahoo.com">
-        <password>floreacalin</password>
+    <user userMail="corugamihaela@gmail.com">
+        <imagePath>/images/person.png</imagePath>
+        <password>1000:2923e31bf54867ae84f2e5a011d8d79f:5c82d77317e669091b408c32239befa0768293a0480f24766cebd70f721d9d2b949bae06ff5bdbdcce395c2fc830ab7722aa4f26a9e409631d7d655692e59f39</password>
         <userType>Candidate</userType>
     </user>
-    <user userMail="admitere@cs.ubbcluj.ro">
-        <password>admitereubb</password>
+    <user userMail="petrutiupaul@gmail.com">
+        <imagePath>/images/person.png</imagePath>
+        <password>1000:c5ab4fb21e0893341767060e03d71f4d:4aa2a401d89f1d3498ac3440aac55c833620e77325168396260df3e8ddacf18cfa9a2ef3b7fa883615381ce5b498d724c1e47bb88c196daa8e9fb01415f4bd58</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="cosmaelena@yahoo.com">
+        <imagePath>/images/person.png</imagePath>
+        <password>1000:6406b515e4c9b219b2af98214455d939:649e65612a46d2249e42810decf8c6ba7becc221052f410bd04b70de4fd4eb56258edfc9b9e6c0fd994f40b3368b2641d059a2704391192211611f797b895705</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="bucatariumarian@gmail.com">
+        <imagePath>/images/person.png</imagePath>
+        <password>1000:754cfe3f9ade7c7fe6b832112145afc1:55cbbb09ff01240a8ab17d05f2edb2ca6a3722dabe8be8578951e4c203e8eb39df0befab12e515814aab8c5509200c6362fb9866db46651ad13dd491b94325aa</password>
+        <userType>Candidate</userType>
+    </user>
+    <user userMail="admitereubb@gmail.com">
+        <imagePath>file:/E:/Faculta/An%202/AdmitereConcurs/src/images/icon-app.png</imagePath>
+        <password>1000:2d07215385bc2ba74eeaf1ed22a3bf9b:c832538150b85ec6d62268f04a3c6538e9cfda6c5ba3732ff37957edd228db85b595d75c7b7b962b695aa1b33d2419e15b64dfb651d1316c258a7c9516954345</password>
         <userType>Admin</userType>
     </user>
-    <user userMail="mihaiionescu@yahoo.com">
-        <password>dadada</password>
-        <userType>Candidate</userType>
-    </user>
-    <user userMail="abcdefgh@gmail.com">
-        <password>parola</password>
-        <userType>Candidate</userType>
-    </user>
-    <user userMail="mail@yahoo.com">
-        <password>parolamea</password>
+    <user userMail="hcir@scs.com">
+        <imagePath>file:/C:/Users/Alex/Pictures/Camera%20Roll/WIN_20171116_21_53_30_Pro.jpg</imagePath>
+        <password>1000:118db6da21ca0266e75fc5a92c883500:572939f28208bef958165a2cde133e60842e7743373a1a500c7f9d68fee725357dc6848adebdc120e83ab799edd3f5507433d7e5059c402ed360e4f210b3c05a</password>
         <userType>Candidate</userType>
     </user>
     <user userMail="ioanbogdan@gmail.com">
-        <password>parolamea</password>
+        <imagePath>file:/E:/Faculta/An%202/AdmitereConcurs/src/images/icon-app.png</imagePath>
+        <password>1000:19fc7ec0f557c9d2f9e1696deed3c9b3:f51ad85064cab730e1e7502af90cf780ccca00c9cc4c5f54719fce576648273faa800dfc2ab2394bd243eef95fea50d5d2a78b2220fea6c227c322764dc96e80</password>
         <userType>Candidate</userType>
     </user>
-    <user userMail="iair2122@scs.ro">
-        <password>parolamea</password>
+    <user userMail="ionutandreea@yahoo.com">
+        <imagePath>/images/person.png</imagePath>
+        <password>1000:f42916439d98319e657b27694473f839:885847bed5e5cc52f972bd2701ae203c56bb8d42cbaf7631f3a277ab37409e40de92a3874d0e365a511aa7d39e21869e7f41cfed4c2791ef6b0848d4e884f682</password>
         <userType>Candidate</userType>
     </user>
 </users>

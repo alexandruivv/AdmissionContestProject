@@ -21,6 +21,8 @@ import utils.UserType;
 
 import javax.swing.text.html.ImageView;
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 
 public class AddCandidateController {
 
@@ -58,12 +60,16 @@ public class AddCandidateController {
             }
             else{
                 service.save(getCandidate());
-                serviceUser.save(new User(getCandidate().getMail(), "parolaubb", UserType.Candidate));
+                serviceUser.save(new User(getCandidate().getMail(), LoginController.generateStrongPasswordHash("parolaubb"), UserType.Candidate));
                 MessageAlert.showMessage(null, Alert.AlertType.INFORMATION, "Adaugat", "Candidat adaugat cu succes !");
             }
             stage.close();
         } catch (ValidationException e) {
             MessageAlert.showErrorMessage(null, e.getMessage());
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (InvalidKeySpecException e) {
+            e.printStackTrace();
         }
     }
 

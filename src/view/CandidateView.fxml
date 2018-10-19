@@ -15,7 +15,6 @@
 
 <Pane prefHeight="703.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CandidateController">
    <children>
-      <TextField fx:id="filterField" layoutX="8.0" layoutY="231.0" onKeyReleased="#handleFilter" prefHeight="31.0" prefWidth="560.0" promptText="Filtrare" />
       <ImageView fitHeight="99.0" fitWidth="130.0" layoutX="20.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/person-icon-black.png" />
@@ -49,7 +48,6 @@
             <Font name="Arial Bold" size="15.0" />
          </font>
       </Text>
-      <ComboBox fx:id="filterBox" layoutX="577.0" layoutY="231.0" prefHeight="31.0" prefWidth="170.0" promptText="Neselectat" />
       <Pane fx:id="addOptionPane" layoutX="222.0" layoutY="14.0" prefHeight="213.0" prefWidth="523.0" style="-fx-background-color: #FFFAF0;">
          <children>
             <Text fx:id="optionsLabel" layoutX="89.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Optiuni ale candidatului">
@@ -108,5 +106,7 @@
             <Pagination fx:id="candidatesPagination" pageCount="1" prefHeight="42.0" prefWidth="200.0" />
          </children>
       </VBox>
+      <TextField fx:id="filterField" layoutX="8.0" layoutY="233.0" onKeyReleased="#handleFilter" prefHeight="31.0" prefWidth="538.0" promptText="Filtrare" />
+      <ComboBox fx:id="filterBox" layoutX="556.0" layoutY="233.0" prefHeight="31.0" prefWidth="195.0" promptText="Neselectat" />
    </children>
 </Pane>

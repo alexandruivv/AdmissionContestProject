@@ -71,13 +71,19 @@
          <content>
             <VBox alignment="TOP_CENTER" style="-fx-background-color: white;">
                <children>
-                  <ImageView fitHeight="99.0" fitWidth="130.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="candidateImage" fitHeight="99.0" fitWidth="130.0" layoutX="94.0" layoutY="14.0" onMouseClicked="#handleChangePhoto" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/person.png" />
                      </image>
                      <effect>
                         <DropShadow />
                      </effect>
+                     <HBox.margin>
+                        <Insets right="80.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </ImageView>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
